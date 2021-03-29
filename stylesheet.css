@@ -1,0 +1,156 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 23, 2020, 1:48:55 PM
+    Author     : user
+*/
+
+.textbox{
+    width:350px;
+    height: 30px;
+}
+.container{
+    height:50px;
+    width:50px;
+    
+}
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.col-xs-4{
+    height:100px;
+}
+#banner_image{
+ background:url("img/intro-bg_1.jpg");
+ padding-top:75px;
+ padding-bottom:50px;
+ text-align:center;
+ color:#f8f8f8;
+ background-size:cover;
+    
+    
+}
+#banner_content{
+ 
+ padding-top: 6%;
+ padding-bottom: 6%;
+ margin-top: 12%;
+ margin-bottom: 12%;
+ background-color: rgba(0, 0, 0, 0.7);
+ max-width: 660px; 
+ margin-left:250px;
+}
+footer{
+   padding: 10px 0;
+ background-color: #101010;
+ color:#9d9d9d;
+ margin-bottom:0px;
+ width: 100%; 
+  margin-top:20px; 
+    
+}
+    
+.btn{
+ font-size:15px;   
+    
+}
+h4{
+   font-weight: bold;
+    
+}
+#table{
+    
+    
+    
+    border:0px;
+}
+h3{
+   font-weight: bold; 
+}
+.form-group{
+    width:50px;
+    height:50px;
+}
+.col-xs-2{
+    height:100px;
+}
+.col-xs-4{
+    height:100px;
+    width:200px;
+}
+.textbox1{
+    height:80px;
+    width:500px;
+}
+.pos{
+  move-to: content;
+}
+.move{
+    align-content:center;
+}
+.taran{
+    width:200px;
+    height:30px;
+    transition: 0.5s;
+    box-shadow: 0 0 4px 0 dodgerblue;
+    
+}
+form{
+    margin:35px;
+}
+.input-field{
+    width:400px;
+    height:40px;
+    margin-top:20px;
+    padding-left:10px;
+    padding-right:10px;
+    border:1px black;
+    
+}
+#taran1{
+    width:400px;
+    height:200px;
+    transition: 0.5s;
+    box-shadow: 0 0 4px 0 dodgerblue;
+    
+}
+.btn{
+    border-radius:20px;
+    color: #fff;
+    margin-top:18px;
+    padding:10px;
+    background-color:blue;
+    font-size:12px;
+    border:none;
+    cursor:pointer;
+    
+}
+#yo{
+    border:1px solid black;
+    
+
+}
+#yo1{
+    border:1px solid black;
+    
+}
+#yo2{
+    border:1px solid black;
+    
+}
+#yo3{
+    background-color:white;
+}
+#taran3{
+    width:400px;
+    height:auto;
+   
+    height:30px;
+    transition: 0.5s;
+    box-shadow: 0 0 4px 0 dodgerblue;
+}
