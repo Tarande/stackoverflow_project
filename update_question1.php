@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -34,7 +32,7 @@ and open the template in the editor.
      <div class="navbar-fixed-top">
    
     <div id="yo" class="img">
-            <h2> STACKOVERFLOW</h2> 
+            <h2> STACKOVERFLOW UPDATE</h2> 
     
         
     </div>
@@ -44,21 +42,29 @@ and open the template in the editor.
     <p> ASK A PUBLIC QUESTION </p>
     </div>
     <div id="yo3">
-        <form action="newEmptyPHP.php" method="post">
-    <label for="text">TITLE</label>
+        <form action="update_question.php" method="post">
+            
+    <label for="text">INPUT ID TO UPDATE</label>
+    <h5> Update the question please</h5>
+    <input type="text" id="changeid" class="input-field taran" placeholder="enter your text" name="id"/>
+    <br><br>
+            
+            
+            
+    <label for="text">TITLE TO CHANGE</label>
     <h5> Be specific and imagine you are re asking a question to another person</h5>
-    <input type="text" id="QuestionTitelText" class="input-field taran" placeholder="enter your text" name="Title"/>
+    <input type="text" id="QuestionTitelText" class="input-field taran" placeholder="enter your text" name="Titletochange"/>
       <br><br>
     <label for="text">BODY</label>
     
     <h5> Include all the information someone would need to answer your question </h5><br>
     
-    <input type="text" class="input-field" placeholder="enter your text for conformation" id="taran1" name="Body"><br>
+    <input type="text" class="input-field" placeholder="enter your text for conformation" id="taran1" name="Bodytochange"><br>
     <br> 
     <br>
     <label for="taran3">TAGS</label><br>
     
-    <input type="text" class="input-field" placeholder="enter your text" id="taran3" name="Tag">
+    <input type="text" class="input-field" placeholder="enter your text" id="taran3" name="Tagtochange">
     <br> 
     <br>
    

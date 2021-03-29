@@ -1,4 +1,4 @@
-    <html>
+<html>
     <title>
     <head>fetch data from database </head>
     </title>
@@ -11,7 +11,7 @@
            <th> BODY </th>
            <th>TAG </th>
            <th> CREATED ON </th>
-          
+           <th> DELETE data </th>
                
             </tr>
       <?php
@@ -31,6 +31,7 @@
             <td>".$result['Body']."</td>
             <td>".$result['Tag']."</td>
             <td>".$result['CreatedOn']."</td>
+            <td> <a href ='delete.php?id=$result[id]'>DELETE</td>
             
                 
            
