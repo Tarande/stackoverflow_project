@@ -154,3 +154,9 @@ form{
     transition: 0.5s;
     box-shadow: 0 0 4px 0 dodgerblue;
 }
+.navbar-nav{
+    padding-right: 50px;
+    padding-top:40px;
+    
+ 
+}
