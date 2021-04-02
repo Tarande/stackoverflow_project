@@ -87,14 +87,16 @@ else
 
 /// to update the table
 
-if(isset($_POST['hidden_user_idupd'])){ //'hidden_user_idupd'
-    $hidden_user_idupd = $_POST['hidden_user_idupd'];
-    $Titletochange = $_POST['Titletochange'];
-    $Bodytochange = $_POST['Bodytochange'];
-    $Tagtochange = $_POST['Tagtochange'];
+if(isset($_POST['hidden_user_id'])){ 
+    $hidden_user_id = $_POST['hidden_user_id'];
+    $Title = $_POST['Title'];
+    $Body = $_POST['Body'];
+    $Tagt = $_POST['Tag'];
     
-    $query = "UPDATE `question_table` SET `Title` = '$Titletochange' , `Body` ='$Bodytochange', `Tag` ='$Tagtochange' WHERE `id` ='$hidden_user_idupd'";    
-    mysqli_query($dbconnect,$query);
+    $query = "UPDATE question_table SET  Title= '$Title' , Body='$Body', Tag='$Tag' WHERE id='$hidden_user_id'";    
+    if(!$result = mysqli_query($dbconnect,$query)){
+        exit(mysqli_error());
+    }
         
     
 }

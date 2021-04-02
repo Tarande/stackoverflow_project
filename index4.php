@@ -178,7 +178,7 @@
                 if(conf === true){
                     $.ajax({
                       url:"backend1.php",
-                      type:'post',//"post"
+                      type:'post',
                       data:{
                           deleteid:deleteid
                       },
@@ -192,7 +192,7 @@
                     
                 }
              
-            }
+            } 
             function GetUserDetails(id){
                 $('#hidden_user_id').val();
                 $.post("backend1.php",{
@@ -211,17 +211,17 @@
             
             
                function updatequestiondetails(){
-                var Titletochange = $('#update_Title').val();
-                var Bodytochange = $('#update_Body').val();
-                var Tagtochange = $('#update_Tag').val();
-                var hidden_user_idupd = $('#hidden_user_id').val();
-                //cut from 
+                var Title = $('#update_Title').val();
+                var Body = $('#update_Body').val();
+                var Tag = $('#update_Tag').val();
+                var hidden_user_id = $('#hidden_user_id').val();
+                
                 $.post("backend1.php",{
                    
-                    hidden_user_idupd:hidden_user_idupd,
-                    Titletochange:Titletochange,
-                    Bodytochange:Bodytochange,
-                    Tagtochange:Tagtochange
+                    hidden_user_id:hidden_user_id,
+                    Title:Title,
+                    Body:Body,
+                    Tag:Tag
                      },
                      function (data,status){
                      $('#update_user_data').modal("hide");  
