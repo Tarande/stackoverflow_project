@@ -37,7 +37,7 @@
      
      <div class="navbar-fixed-top">
          <ul class="nav navbar-nav navbar-right">
-             <li><a href="update_question1.php"><span class="glyphicon glyphicon-info-sign"></span> UPDATE </a> </li>
+             <li><a href="delete_update_both.php"><span class="glyphicon glyphicon-info-sign"></span> UPDATE </a> </li>
                     <li><a href="index.php"><span class="glyphicon glyphicon-user"></span> ENTER </a> </li>
                     <li><a href=index1.php><span class="glyphicon glyphicon-search"></span> FETCH</a> </li>
                     <li><a href="DELETE1.php"><span class="glyphicon glyphicon-trash"></span> DELETE</a> </li>
@@ -45,7 +45,7 @@
                 </ul>
    
     <div id="yo" class="img">
-            <h2>        <span class="glyphicon glyphicon-globe"></span>STACKOVERFLOW UPDATE</h2> 
+        <h2>        <span class="glyphicon glyphicon-globe"></span>STACKOVERFLOW UPDATE</h2>
             
             
             
