@@ -37,18 +37,18 @@
         <form action="database2.php" id="myform" method="post">
     <label for="text">TITLE</label>
     <h5> Be specific and imagine you are re asking a question to another person</h5>
-    <input type="text" id="QuestionTitelText" class="input-field taran" placeholder="enter your text" name="Title"/>
+    <input type="text" id="QuestionTitelText" class="input-field taran" placeholder="enter your text" name="QuestionTitelText">
       <br><br>
     <label for="text">BODY</label>
     
     <h5> Include all the information someone would need to answer your question </h5><br>
     
-    <input type="text" class="input-field" placeholder="enter your text for conformation" id="taran1" name="Body"><br>
+    <input type="text" class="input-field" placeholder="enter your text for conformation" id="taran1" name="taran1"><br>
     <br> 
     <br>
     <label for="taran3">TAGS</label><br>
     
-    <input type="text" class="input-field" placeholder="enter your text" id="taran3" name="Tag">
+    <input type="text" class="input-field" placeholder="enter your text" id="taran3" name="taran3">
     <br> 
     <br>
     </form>  

@@ -91,14 +91,11 @@ if(isset($_POST['hidden_user_id'])){
     $hidden_user_id = $_POST['hidden_user_id'];
     $Title = $_POST['Title'];
     $Body = $_POST['Body'];
-    $Tagt = $_POST['Tag'];
+    $Tag = $_POST['Tag'];
     
     $query = "UPDATE question_table SET  Title= '$Title' , Body='$Body', Tag='$Tag' WHERE id='$hidden_user_id'";    
     if(!$result = mysqli_query($dbconnect,$query)){
         exit(mysqli_error());
-    }
-        
-    
+    }  
 }
-
 ?>
