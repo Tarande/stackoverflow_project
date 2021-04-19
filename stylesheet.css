@@ -164,4 +164,10 @@ form{
     padding-bottom:10px;
     padding-left:10px;
 }
-
+#bg-color{
+    color:white;
+}
+#pad{
+    padding-left: 200px;
+    margin-left: 200px;
+}
