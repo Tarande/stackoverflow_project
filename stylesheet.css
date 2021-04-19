@@ -73,8 +73,8 @@ h3{
    font-weight: bold; 
 }
 .form-group{
-    width:50px;
-    height:50px;
+    width:150px;
+    height:150px;
 }
 .col-xs-2{
     height:100px;
@@ -159,5 +159,9 @@ form{
     padding-top:40px;
     
  
+}
+.button{
+    padding-bottom:10px;
+    padding-left:10px;
 }
 

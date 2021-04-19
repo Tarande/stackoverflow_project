@@ -84,7 +84,7 @@
 
       <!-- Modal body -->
       <div class="modal-body">
-        <form action="backend1.php" id="myform" method="post">
+        <!-- form action="backend1.php" id="myform" method="post" -->
             
     <label for="update_Title">TITLE</label>
     <h5> Be specific and imagine you are re asking a question to another person</h5>
@@ -100,7 +100,7 @@
     <input type="text" id="update_Tag" class="input-field" placeholder="enter your text"  name="update_Tag">
     <br> 
     <br>
-    </form>  
+    <!-- /form -->  
      
       </div>
   
