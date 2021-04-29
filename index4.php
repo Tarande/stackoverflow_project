@@ -1,3 +1,14 @@
+<?php
+session_start();
+
+if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
+    header("location: login1.php");
+    exit;
+}
+
+?>
+
+
 <html>
     <head>
         <title> crud operations</title>
@@ -21,6 +32,7 @@
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
     Open modal
    </button> 
+        <a href="logout.php">  <button type="button"  class="btn btn-primary">logout </button> </a>
         <!-- The Modal -->
 <div class="modal" id="myModal">
   <div class="modal-dialog">

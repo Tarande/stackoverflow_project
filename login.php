@@ -1,3 +1,40 @@
+<?php
+$server = "localhost";
+$login = false;
+$showError = false;
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+    include 'signupdata.php';
+    $email = $_POST["email"];
+    $password = $_POST["password"]; 
+    
+     
+    $sql = "Select * from users where email='$email' AND password='$password'";
+    $result = mysqli_query($conn, $sql);
+    $num = mysqli_num_rows($result);
+    if ($num == 1){
+        $login = true;
+        session_start();
+        $_SESSION['loggedin'] = true;
+        $_SESSION['email'] = $email;
+        header("location: index4.php");
+
+    } 
+    else{
+        $showError = "Invalid Credentials";
+    }
+}
+    
+?>
+
+
+
+
+
+
+
+
+
+
 <html>
     <head>
         <title> crud operations</title>
@@ -11,6 +48,25 @@
      
     </head>
     <body>
+        <?php
+        if($login){
+    echo ' <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Success!</strong> You are logged in
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">×</span>
+        </button>
+    </div> ';
+    }
+    if($showError){
+    echo ' <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Error!</strong> '. $showError.'
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">×</span>
+        </button>
+    </div> ';
+    }
+    ?>
+
     <div class="navbar-fixed-top">
     <div id="yo">
     <h2>  <span class="glyphicon glyphicon-globe"> </span> STACKOVERFLOW</h2> 
@@ -19,16 +75,18 @@
        <br>  <br>  <br>   <br>  <br>  <br>      <br>  <br>  <br>   <br> 
 
        <div>
-     <form action="database5.php"  method="post">
-    <label for="text">email</label><br>
-    <input type="email" class="input-field" placeholder="enter your email to log in" id="phone" name="phone">
+     <form action="logindata.php"  method="post">
+         <h3> STACKOVERFLOW LOGIN </h3>
+         <br>
+    <label for="text">E-mail:</label><br>
+    <input type="email" class="input-field" placeholder="enter your email to log in" id="email" name="email">
     <br> 
     <br>
-    <label for="text">password</label><br>
+    <label for="text">Password:</label><br>
     <input type="password" class="input-field" placeholder="enter your password" id="password" name="password">
     <br> 
     <br>
-    <button type="submit" form="form1" value="Submit" onclick="addRecords()">Login</button>
+    <button type="submit" form="form1" value="Submit" >Login</button>
     </form>  
            </div>
     </body>

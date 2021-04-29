@@ -1,3 +1,12 @@
+<?php
+$mysqli = new mysqli("localhost","root","","stackoverflow_project");
+echo "success";
+
+
+
+
+?>
+
 <html>
     <head>
         <title> crud operations</title>
@@ -21,13 +30,11 @@
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
     signup 
    </button> 
-        <a href="login.php"> <button type="button" class="btn btn-primary">login</button> </a>
+        <a href="login.php"> <button type="button" class="btn btn-primary"> login </button> </a>
         
-        <a href="logout.php">  <button type="button" id="pad" class="btn btn-primary">logout </button> </a>
         <!-- The Modal -->
-        
-<div class="modal" id="myModal">
-  <div class="modal-dialog">
+  <div class="modal" id="myModal">
+   <div class="modal-dialog">
     <div class="modal-content">
 
       <!-- Modal Header -->
@@ -38,7 +45,7 @@
 
       <!-- Modal body -->
       <div class="modal-body">
-        <form action="database5.php"  method="post">
+          <form action="signupdata.php"  method="post">
     <label for="text">Name</label>
     <input type="text" id="name" class="input-field taran" placeholder="enter your name" name="name">
       <br><br>
@@ -68,6 +75,12 @@
   </div>
 </div>
     </div> 
+        
+        
+        
+        
+        
+      
       
 <script type="text/javascript">
 function addRecords(){
